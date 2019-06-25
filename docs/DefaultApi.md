@@ -1,4 +1,4 @@
-# swagger_client.DefaultApi
+# sesame_client.DefaultApi
 
 All URIs are relative to *https://api.candyhouse.co/public*
 
@@ -21,18 +21,18 @@ Query Execution Result
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sesame_client
+from sesame_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: api_key
-configuration = swagger_client.Configuration()
+configuration = sesame_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi(swagger_client.ApiClient(configuration))
+api_instance = sesame_client.DefaultApi(sesame_client.ApiClient(configuration))
 task_id = 'task_id_example' # str | Task ID from command result.
 
 try:
@@ -73,18 +73,18 @@ Get Sesame status
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sesame_client
+from sesame_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: api_key
-configuration = swagger_client.Configuration()
+configuration = sesame_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi(swagger_client.ApiClient(configuration))
+api_instance = sesame_client.DefaultApi(sesame_client.ApiClient(configuration))
 device_id = 'device_id_example' # str | Sesame unique ID
 
 try:
@@ -127,20 +127,20 @@ Control Sesame
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sesame_client
+from sesame_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: api_key
-configuration = swagger_client.Configuration()
+configuration = sesame_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi(swagger_client.ApiClient(configuration))
+api_instance = sesame_client.DefaultApi(sesame_client.ApiClient(configuration))
 device_id = 'device_id_example' # str | Sesame unique ID
-body = swagger_client.Body() # Body | Sync command will force the server to update Sesame status. **NOTE**: Frequent use of the sync command will reduce Sesame’s battery life. 
+body = sesame_client.Body() # Body | Sync command will force the server to update Sesame status. **NOTE**: Frequent use of the sync command will reduce Sesame’s battery life. 
 
 try:
     # Control Sesame
@@ -181,18 +181,18 @@ Get Sesame list
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sesame_client
+from sesame_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: api_key
-configuration = swagger_client.Configuration()
+configuration = sesame_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi(swagger_client.ApiClient(configuration))
+api_instance = sesame_client.DefaultApi(sesame_client.ApiClient(configuration))
 
 try:
     # Get Sesame list

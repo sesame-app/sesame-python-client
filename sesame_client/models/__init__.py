@@ -15,8 +15,8 @@
 from __future__ import absolute_import
 
 # import models into model package
-from swagger_client.models.body import Body
-from swagger_client.models.inline_response200 import InlineResponse200
-from swagger_client.models.inline_response2001 import InlineResponse2001
-from swagger_client.models.inline_response2002 import InlineResponse2002
-from swagger_client.models.inline_response2003 import InlineResponse2003
+from sesame_client.models.body import Body
+from sesame_client.models.inline_response200 import InlineResponse200
+from sesame_client.models.inline_response2001 import InlineResponse2001
+from sesame_client.models.inline_response2002 import InlineResponse2002
+from sesame_client.models.inline_response2003 import InlineResponse2003
