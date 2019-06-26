@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/sesame-app/sesame-python-client.svg?branch=master)](https://travis-ci.org/sesame-app/sesame-python-client)
+
 # sesame-client
 We use RESTful API to provide basic manipulation of the Sesame smart lock, including: * Get Sesame lock/unlock status * Get battery status * Lock and unlock Sesame * Sync Sesame status * Get results for lock, unlock, and sync commands 
 
