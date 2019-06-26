@@ -54,7 +54,8 @@ class InlineResponse2003(object):
         if error is not None:
             self.error = error
         self.status = status
-        self.successful = successful
+        if successful is not None:
+            self.successful = successful
 
     @property
     def error(self):
@@ -128,8 +129,6 @@ class InlineResponse2003(object):
         :param successful: The successful of this InlineResponse2003.  # noqa: E501
         :type: bool
         """
-        if successful is None:
-            raise ValueError("Invalid value for `successful`, must not be `None`")  # noqa: E501
 
         self._successful = successful
 
