@@ -1,4 +1,4 @@
-# Body
+# InlineObject
 
 ## Properties
 Name | Type | Description | Notes
