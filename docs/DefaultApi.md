@@ -15,18 +15,17 @@ Method | HTTP request | Description
 
 Query Execution Result
 
-
-
 ### Example
+
+* Api Key Authentication (api_key):
 ```python
 from __future__ import print_function
 import time
 import sesame_client
 from sesame_client.rest import ApiException
 from pprint import pprint
-
-# Configure API key authorization: api_key
 configuration = sesame_client.Configuration()
+# Configure API key authorization: api_key
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
@@ -59,8 +58,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** |  |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -70,15 +74,16 @@ Name | Type | Description  | Notes
 Get Sesame status
 
 ### Example
+
+* Api Key Authentication (api_key):
 ```python
 from __future__ import print_function
 import time
 import sesame_client
 from sesame_client.rest import ApiException
 from pprint import pprint
-
-# Configure API key authorization: api_key
 configuration = sesame_client.Configuration()
+# Configure API key authorization: api_key
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
@@ -111,8 +116,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** |  |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -121,18 +131,17 @@ Name | Type | Description  | Notes
 
 Control Sesame
 
-
-
 ### Example
+
+* Api Key Authentication (api_key):
 ```python
 from __future__ import print_function
 import time
 import sesame_client
 from sesame_client.rest import ApiException
 from pprint import pprint
-
-# Configure API key authorization: api_key
 configuration = sesame_client.Configuration()
+# Configure API key authorization: api_key
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
@@ -140,7 +149,7 @@ configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # create an instance of the API class
 api_instance = sesame_client.DefaultApi(sesame_client.ApiClient(configuration))
 device_id = 'device_id_example' # str | Sesame unique ID
-body = sesame_client.Body() # Body | Sync command will force the server to update Sesame status. **NOTE**: Frequent use of the sync command will reduce Sesame’s battery life. 
+body = sesame_client.InlineObject() # InlineObject | 
 
 try:
     # Control Sesame
@@ -155,7 +164,7 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **device_id** | [**str**](.md)| Sesame unique ID | 
- **body** | [**Body**](Body.md)| Sync command will force the server to update Sesame status. **NOTE**: Frequent use of the sync command will reduce Sesame’s battery life.  | 
+ **body** | [**InlineObject**](InlineObject.md)|  | 
 
 ### Return type
 
@@ -170,23 +179,29 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** |  |  -  |
+
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **sesames_get**
-> list[object] sesames_get()
+> list[InlineResponse200] sesames_get()
 
 Get Sesame list
 
 ### Example
+
+* Api Key Authentication (api_key):
 ```python
 from __future__ import print_function
 import time
 import sesame_client
 from sesame_client.rest import ApiException
 from pprint import pprint
-
-# Configure API key authorization: api_key
 configuration = sesame_client.Configuration()
+# Configure API key authorization: api_key
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
@@ -207,7 +222,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**list[object]**
+[**list[InlineResponse200]**](InlineResponse200.md)
 
 ### Authorization
 
@@ -215,8 +230,13 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** |  |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
