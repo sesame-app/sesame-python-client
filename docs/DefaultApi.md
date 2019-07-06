@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **action_result_get**
-> InlineResponse2003 action_result_get(task_id)
+> QueryExecutionResultResponse action_result_get(task_id)
 
 Query Execution Result
 
@@ -30,7 +30,9 @@ configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
-# create an instance of the API class
+# Defining host is optional and default to https://api.candyhouse.co/public
+configuration.host = "https://api.candyhouse.co/public"
+# Create an instance of the API class
 api_instance = sesame_client.DefaultApi(sesame_client.ApiClient(configuration))
 task_id = 'task_id_example' # str | Task ID from command result.
 
@@ -50,7 +52,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2003**](InlineResponse2003.md)
+[**QueryExecutionResultResponse**](QueryExecutionResultResponse.md)
 
 ### Authorization
 
@@ -64,12 +66,12 @@ Name | Type | Description  | Notes
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** |  |  -  |
+**200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **sesame_device_id_get**
-> InlineResponse2001 sesame_device_id_get(device_id)
+> GetSesameStatusResponse sesame_device_id_get(device_id)
 
 Get Sesame status
 
@@ -88,7 +90,9 @@ configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
-# create an instance of the API class
+# Defining host is optional and default to https://api.candyhouse.co/public
+configuration.host = "https://api.candyhouse.co/public"
+# Create an instance of the API class
 api_instance = sesame_client.DefaultApi(sesame_client.ApiClient(configuration))
 device_id = 'device_id_example' # str | Sesame unique ID
 
@@ -108,7 +112,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**GetSesameStatusResponse**](GetSesameStatusResponse.md)
 
 ### Authorization
 
@@ -122,12 +126,12 @@ Name | Type | Description  | Notes
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** |  |  -  |
+**200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **sesame_device_id_post**
-> InlineResponse2002 sesame_device_id_post(device_id, body)
+> ControlSesameResponse sesame_device_id_post(device_id, body)
 
 Control Sesame
 
@@ -146,10 +150,12 @@ configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
-# create an instance of the API class
+# Defining host is optional and default to https://api.candyhouse.co/public
+configuration.host = "https://api.candyhouse.co/public"
+# Create an instance of the API class
 api_instance = sesame_client.DefaultApi(sesame_client.ApiClient(configuration))
 device_id = 'device_id_example' # str | Sesame unique ID
-body = sesame_client.InlineObject() # InlineObject | 
+body = sesame_client.ControlSesameRequest() # ControlSesameRequest | Sync command will force the server to update Sesame status. **NOTE**: Frequent use of the sync command will reduce Sesame’s battery life. 
 
 try:
     # Control Sesame
@@ -164,11 +170,11 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **device_id** | [**str**](.md)| Sesame unique ID | 
- **body** | [**InlineObject**](InlineObject.md)|  | 
+ **body** | [**ControlSesameRequest**](ControlSesameRequest.md)| Sync command will force the server to update Sesame status. **NOTE**: Frequent use of the sync command will reduce Sesame’s battery life.  | 
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**ControlSesameResponse**](ControlSesameResponse.md)
 
 ### Authorization
 
@@ -182,12 +188,12 @@ Name | Type | Description  | Notes
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** |  |  -  |
+**200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **sesames_get**
-> list[InlineResponse200] sesames_get()
+> list[GetSesameResponse] sesames_get()
 
 Get Sesame list
 
@@ -206,7 +212,9 @@ configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
-# create an instance of the API class
+# Defining host is optional and default to https://api.candyhouse.co/public
+configuration.host = "https://api.candyhouse.co/public"
+# Create an instance of the API class
 api_instance = sesame_client.DefaultApi(sesame_client.ApiClient(configuration))
 
 try:
@@ -222,7 +230,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**list[InlineResponse200]**](InlineResponse200.md)
+[**list[GetSesameResponse]**](GetSesameResponse.md)
 
 ### Authorization
 
@@ -236,7 +244,7 @@ This endpoint does not need any parameter.
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** |  |  -  |
+**200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

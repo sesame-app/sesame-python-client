@@ -29,9 +29,9 @@ from sesame_client.exceptions import ApiValueError
 from sesame_client.exceptions import ApiKeyError
 from sesame_client.exceptions import ApiException
 # import models into sdk package
-from sesame_client.models.inline_object import InlineObject
-from sesame_client.models.inline_response200 import InlineResponse200
-from sesame_client.models.inline_response2001 import InlineResponse2001
-from sesame_client.models.inline_response2002 import InlineResponse2002
-from sesame_client.models.inline_response2003 import InlineResponse2003
+from sesame_client.models.control_sesame_request import ControlSesameRequest
+from sesame_client.models.control_sesame_response import ControlSesameResponse
+from sesame_client.models.get_sesame_response import GetSesameResponse
+from sesame_client.models.get_sesame_status_response import GetSesameStatusResponse
+from sesame_client.models.query_execution_result_response import QueryExecutionResultResponse
 

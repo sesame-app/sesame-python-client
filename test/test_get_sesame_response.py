@@ -16,12 +16,12 @@ from __future__ import absolute_import
 import unittest
 
 import sesame_client
-from sesame_client.models.inline_response2001 import InlineResponse2001  # noqa: E501
+from sesame_client.models.get_sesame_response import GetSesameResponse  # noqa: E501
 from sesame_client.rest import ApiException
 
 
-class TestInlineResponse2001(unittest.TestCase):
-    """InlineResponse2001 unit test stubs"""
+class TestGetSesameResponse(unittest.TestCase):
+    """GetSesameResponse unit test stubs"""
 
     def setUp(self):
         pass
@@ -29,10 +29,10 @@ class TestInlineResponse2001(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testInlineResponse2001(self):
-        """Test InlineResponse2001"""
+    def testGetSesameResponse(self):
+        """Test GetSesameResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = sesame_client.models.inline_response2001.InlineResponse2001()  # noqa: E501
+        # model = sesame_client.models.get_sesame_response.GetSesameResponse()  # noqa: E501
         pass
 
 

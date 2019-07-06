@@ -54,7 +54,7 @@ class DefaultApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: InlineResponse2003
+        :return: QueryExecutionResultResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -80,7 +80,7 @@ class DefaultApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: tuple(InlineResponse2003, status_code(int), headers(HTTPHeaderDict))
+        :return: tuple(QueryExecutionResultResponse, status_code(int), headers(HTTPHeaderDict))
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -135,7 +135,7 @@ class DefaultApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2003',  # noqa: E501
+            response_type='QueryExecutionResultResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=local_var_params.get('async_req'),
             _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
@@ -160,7 +160,7 @@ class DefaultApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: InlineResponse2001
+        :return: GetSesameStatusResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -186,7 +186,7 @@ class DefaultApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: tuple(InlineResponse2001, status_code(int), headers(HTTPHeaderDict))
+        :return: tuple(GetSesameStatusResponse, status_code(int), headers(HTTPHeaderDict))
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -241,7 +241,7 @@ class DefaultApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2001',  # noqa: E501
+            response_type='GetSesameStatusResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=local_var_params.get('async_req'),
             _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
@@ -259,7 +259,7 @@ class DefaultApi(object):
 
         :param async_req bool: execute request asynchronously
         :param str device_id: Sesame unique ID (required)
-        :param InlineObject body: (required)
+        :param ControlSesameRequest body: Sync command will force the server to update Sesame status. **NOTE**: Frequent use of the sync command will reduce Sesame’s battery life.  (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -267,7 +267,7 @@ class DefaultApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: InlineResponse2002
+        :return: ControlSesameResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -284,7 +284,7 @@ class DefaultApi(object):
 
         :param async_req bool: execute request asynchronously
         :param str device_id: Sesame unique ID (required)
-        :param InlineObject body: (required)
+        :param ControlSesameRequest body: Sync command will force the server to update Sesame status. **NOTE**: Frequent use of the sync command will reduce Sesame’s battery life.  (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -294,7 +294,7 @@ class DefaultApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: tuple(InlineResponse2002, status_code(int), headers(HTTPHeaderDict))
+        :return: tuple(ControlSesameResponse, status_code(int), headers(HTTPHeaderDict))
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -359,7 +359,7 @@ class DefaultApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2002',  # noqa: E501
+            response_type='ControlSesameResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=local_var_params.get('async_req'),
             _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
@@ -383,7 +383,7 @@ class DefaultApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: list[InlineResponse200]
+        :return: list[GetSesameResponse]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -408,7 +408,7 @@ class DefaultApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: tuple(list[InlineResponse200], status_code(int), headers(HTTPHeaderDict))
+        :return: tuple(list[GetSesameResponse], status_code(int), headers(HTTPHeaderDict))
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -457,7 +457,7 @@ class DefaultApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='list[InlineResponse200]',  # noqa: E501
+            response_type='list[GetSesameResponse]',  # noqa: E501
             auth_settings=auth_settings,
             async_req=local_var_params.get('async_req'),
             _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501

@@ -59,7 +59,9 @@ configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
-# create an instance of the API class
+# Defining host is optional and default to https://api.candyhouse.co/public
+configuration.host = "https://api.candyhouse.co/public"
+# Create an instance of the API class
 api_instance = sesame_client.DefaultApi(sesame_client.ApiClient(configuration))
 task_id = 'task_id_example' # str | Task ID from command result.
 
@@ -86,11 +88,11 @@ Class | Method | HTTP request | Description
 
 ## Documentation For Models
 
- - [InlineObject](docs/InlineObject.md)
- - [InlineResponse200](docs/InlineResponse200.md)
- - [InlineResponse2001](docs/InlineResponse2001.md)
- - [InlineResponse2002](docs/InlineResponse2002.md)
- - [InlineResponse2003](docs/InlineResponse2003.md)
+ - [ControlSesameRequest](docs/ControlSesameRequest.md)
+ - [ControlSesameResponse](docs/ControlSesameResponse.md)
+ - [GetSesameResponse](docs/GetSesameResponse.md)
+ - [GetSesameStatusResponse](docs/GetSesameStatusResponse.md)
+ - [QueryExecutionResultResponse](docs/QueryExecutionResultResponse.md)
 
 
 ## Documentation For Authorization
