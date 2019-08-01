@@ -29,6 +29,7 @@ from sesame_client.exceptions import ApiValueError
 from sesame_client.exceptions import ApiKeyError
 from sesame_client.exceptions import ApiException
 # import models into sdk package
+from sesame_client.models.bad_request_response import BadRequestResponse
 from sesame_client.models.control_sesame_request import ControlSesameRequest
 from sesame_client.models.control_sesame_response import ControlSesameResponse
 from sesame_client.models.get_sesame_response import GetSesameResponse

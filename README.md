@@ -88,6 +88,7 @@ Class | Method | HTTP request | Description
 
 ## Documentation For Models
 
+ - [BadRequestResponse](docs/BadRequestResponse.md)
  - [ControlSesameRequest](docs/ControlSesameRequest.md)
  - [ControlSesameResponse](docs/ControlSesameResponse.md)
  - [GetSesameResponse](docs/GetSesameResponse.md)
